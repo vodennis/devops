@@ -18,3 +18,15 @@ describe('Factorial Function', function() {
     assert.strictEqual(main.factorial(-5), undefined);
   });
 });
+
+describe('Factorial Function', function() {
+  it('should return 1 for factorial(0)', function() {
+      assert.strictEqual(main.factorial(0), 1);
+  });
+  it('should return 1 for factorial(1)', function() {
+      assert.strictEqual(main.factorial(1), 1);
+  });
+  it('should return 120 for factorial(5)', function() {
+      assert.strictEqual(main.factorial(5), 120);
+  });
+});
